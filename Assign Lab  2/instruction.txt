@@ -1,0 +1,75 @@
+I. Data Preprocessing and Exploration - lab exercises
+
+These experiments focus on readying the data for analysis.
+
+←
+
+I LAB-1: D
+
+atory is
+
+Experiment
+
+Description
+
+Key Python Code (Pandas/NumPy)
+
+Loading & Displaying
+
+Data
+
+Handling Missing Data
+
+Read a dataset from a CSV
+
+file into a DataFrame and view
+
+s initial rows and structure
+
+Identify and manage missing values (NaNs) in the data by imputing them (e.g., using the mean).
+
+Convert non-numeric data int
+
+a numerical format for
+
+Handling Categorical
+
+Data
+
+pandas as pd
+
+df pd. read csv('filename.csv')
+
+print (df.head())
+
+df.isnull(). sum()
+
+df['Age'].fillna (df['Age'].mean(), inplace-True)
+
+pd.get dummies (df,
+
+columns=['City'])
+
+transform SQL thon libr ago, nltk
+
+data
+
+Data
+
+Visualization &
+
+EDA
+
+modeling (e.g., one-hot
+
+encoding)
+
+Analyze data patterns and
+
+relationships using plots like
+
+histograms, scatter plots, and
+
+correlation heatmaps
+
+import seaborn as sns import matplotlib.pyplot as plt sns.heatmap(df.corr(), annot=True) plt.show()

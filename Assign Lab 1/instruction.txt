@@ -1,0 +1,19 @@
+Write programs to parse text files, CSV, HTML, XML and JSON documents and extract relevant data. After retrieving data check any anomalies in the data, missing values etc.
+
+Write programs for reading and writing binary files.
+
+Write programs for searching, splitting, and replacing strings based on pattern matching using regular expressions.
+
+Design a relational database for a small application and populate the database. Using SQL do the CRUD (create, read, update and delete) operations.
+
+Create a Python MongoDB client using the Python module pymongo. Using a collection object practice functions for inserting, searching, removing, updating, replacing, and aggregating documents, as well as for creating indexes.
+
+Write programs to create numpy arrays of different shapes and from different sources, reshape and slice arrays, add array indexes, and apply arithmetic, logic, and aggregation functions to some or all array elements.
+
+Write programs to use the pandas data structures: Frames and series as storage containers and for a variety of data-wrangling operations, such as:
+Single-level and hierarchical indexing
+Handling missing data
+Arithmetic and Boolean operations on entire columns and tables
+Database-type operations (such as merging and aggregation)
+Plotting individual columns and whole tables
+Reading data from files and writing data to files.

@@ -1,0 +1,41 @@
+======================================================================
+PATIENT CONSENT ANALYSIS - STATISTICAL REPORT
+======================================================================
+
+DATASET SUMMARY
+----------------------------------------------------------------------
+Total unique patient-study consents: 15
+Unique patients: 10
+Unique studies: 3
+
+CONSENT STATISTICS
+----------------------------------------------------------------------
+Mean consent count: 4.27
+Mean consent ratio: 60.95%
+Std consent ratio: 27.78%
+Full consents (all 7 categories): 3
+No consents (0 categories): 0
+
+K-MEANS CLUSTERING RESULTS
+----------------------------------------------------------------------
+Number of clusters: 3
+Silhouette score: 0.249
+
+RANDOM FOREST CLASSIFICATION RESULTS
+----------------------------------------------------------------------
+Target category: demographics
+Accuracy: 60.00%
+Precision: 75.00%
+Recall: 75.00%
+F1-Score: 0.750
+Cross-validation accuracy: 73.33% (+/- 9.43%)
+
+LOGISTIC REGRESSION RESULTS
+----------------------------------------------------------------------
+Accuracy: 80.00%
+Precision: 100.00%
+Recall: 66.67%
+F1-Score: 0.800
+Cross-validation accuracy: 50.00% (+/- 13.61%)
+
+======================================================================
