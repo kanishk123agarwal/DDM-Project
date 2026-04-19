@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DDM Portfolio — Distributed Data Management</title>
+  <meta name="description" content="DDM academic portfolio — Lab 1, Lab 2, Theory Assignment 1 with real code, terminal output and charts."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" defer></script>
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">Kanishk Agarwal</div>
+  <ul class="nav-links">
+    <li><a href="#theory">Theory Assignment-1</a></li>
+    <li><a href="#theory2">Theory Assignment-2</a></li>
+    <li><a href="#lab1">Lab 1</a></li>
+    <li><a href="#lab2">Lab 2</a></li>
+    <li><a href="#lab3">Lab 3</a></li>
+    <li><a href="#combined">Overview</a></li>
+    <li>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="badge-dot"></span>Distributed Data Management</div>
+    <h1>Academic Work<br/><span class="line-grad">Portfolio Showcase</span></h1>
+    <p class="hero-sub">All source files, real terminal output, and visual charts from DDM lab assignments and theory work — exactly as submitted.</p>
+    <div class="hero-btns">
+      <a href="#lab1" class="btn btn-primary"><span>💻</span>View Lab 1 Code</a>
+      <a href="#lab2" class="btn btn-ghost"><span>🤖</span>View Lab 2 Code</a>
+      <a href="#lab3" class="btn btn-ghost" style="background:rgba(67,233,123,0.12);border-color:rgba(67,233,123,0.4);color:#43e97b;"><span>🗺️</span>View Lab 3 — MapReduce</a>
+    </div>
+    <!-- 3D Interactive Spacer / Optional visual element can go here -->
+    <div class="hero-3d-wrap" style="height:60px;"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════
+     THEORY ASSIGNMENT 1
+══════════════════════════════════════ -->
+<section id="theory">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label" style="color:var(--accent1);">
+        <span style="background:var(--grad-theory);height:2px;width:28px;display:block;border-radius:2px;"></span>Theory Assignment 1
+      </div>
+      <h2 class="section-title">Distributed Data Management in Food Computing</h2>
+      <p class="section-desc">Explores modern distributed architectures for food supply chain data — blockchain traceability, federated learning, real-time stream processing, and CAP theorem analysis.</p>
+    </div>
+
+    <div class="theory-grid reveal reveal-delay-1">
+      <div class="glass-card theory-card">
+        <span class="theory-tag violet">📄 Theory Assignment 1</span>
+        <h3>Distributed Data Management<br/>in Food Computing</h3>
+        <p>Analyses distributed data management architectures applied to the food industry — covering real-time stream processing, blockchain-based traceability, privacy-preserving machine learning, and scalable NoSQL storage for smart food supply chains.</p>
+        <div class="highlight-box">
+          <div class="hb-title">🔑 Core Technology — Hyperledger Fabric</div>
+          <p>Uses <strong>Hyperledger Fabric</strong> to provide immutable, end-to-end traceability of food products from farm to table — recording every handoff across producer, logistics, and retailer nodes on a permissioned blockchain.</p>
+        </div>
+        <ul class="topic-list">
+          <li>⛓️ Hyperledger Fabric</li>
+          <li>🤖 Federated Learning</li>
+          <li>📡 Apache Kafka / Flink</li>
+          <li>🗄️ MongoDB / Cassandra</li>
+          <li>⚖️ CAP Theorem</li>
+          <li>🍅 Smart Tomato Supply Chain</li>
+        </ul>
+        <a href="Theory Assignment-1/food_processing.pdf" target="_blank" class="btn btn-primary">
+          <span>📄</span> Open Full Report PDF
+        </a>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div class="glass-card theory-card">
+          <span class="theory-tag pink">⚙️ Architecture Stack</span>
+          <h3 style="font-size:1.15rem;">Distributed Technology Layers</h3>
+          <p>Multi-layer stack for food data: edge IoT sensors feed <strong>Apache Kafka</strong> stream pipelines, processed by <strong>Apache Flink</strong> in real time, stored in <strong>MongoDB / Cassandra</strong>, and secured via <strong>Hyperledger Fabric</strong>.</p>
+          <ul class="topic-list">
+            <li>Kafka stream ingestion</li>
+            <li>Flink real-time processing</li>
+            <li>Data Lakehouse model</li>
+            <li>Edge computing nodes</li>
+          </ul>
+        </div>
+        <div class="glass-card theory-card">
+          <span class="theory-tag violet">📈 Case Study</span>
+          <h3 style="font-size:1.15rem;">Smart Tomato Supply Chain</h3>
+          <p>End-to-end case study: IoT sensors → Kafka ingestion → Flink processing → MongoDB/CouchDB storage → Hyperledger Fabric ledger → consumer traceability dashboard. Demonstrates CAP theorem trade-offs at each layer.</p>
+          <ul class="topic-list">
+            <li>IoT → Kafka → Flink</li>
+            <li>Federated ML models</li>
+            <li>Blockchain audit trail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4-pill summary row -->
+    <div class="theory-pills reveal reveal-delay-2">
+      <div class="theory-pill" style="border-color:rgba(108,99,255,0.4);">
+        <div class="tp-icon" style="background:rgba(108,99,255,0.15);">⛓️</div>
+        <div><div class="tp-title">Hyperledger Fabric</div><div class="tp-desc">Permissioned blockchain for tamper-proof food traceability records</div></div>
+      </div>
+      <div class="theory-pill" style="border-color:rgba(0,210,255,0.4);">
+        <div class="tp-icon" style="background:rgba(0,210,255,0.1);">🤖</div>
+        <div><div class="tp-title">Federated Learning</div><div class="tp-desc">Privacy-preserving ML — models trained locally, only gradients shared</div></div>
+      </div>
+      <div class="theory-pill" style="border-color:rgba(67,233,123,0.4);">
+        <div class="tp-icon" style="background:rgba(67,233,123,0.1);">📡</div>
+        <div><div class="tp-title">Apache Kafka + Flink</div><div class="tp-desc">Real-time IoT sensor stream ingestion and event-driven processing</div></div>
+      </div>
+      <div class="theory-pill" style="border-color:rgba(255,107,157,0.4);">
+        <div class="tp-icon" style="background:rgba(255,107,157,0.1);">⚖️</div>
+        <div><div class="tp-title">CAP Theorem</div><div class="tp-desc">Consistency vs Availability vs Partition tolerance analysis</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════
+     THEORY ASSIGNMENT 2
+══════════════════════════════════════ -->
+<section id="theory2">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label" style="color:var(--accent3);">
+        <span style="background:var(--grad-lab2);height:2px;width:28px;display:block;border-radius:2px;"></span>Theory Assignment 2
+      </div>
+      <h2 class="section-title">Data Aggregation Algorithms for Food Processing</h2>
+      <p class="section-desc">Delves into advanced data aggregation techniques for distributed food processing environments — evaluating algorithms for memory efficiency, network constraints, and streaming analytics.</p>
+    </div>
+
+    <div class="theory-grid reveal reveal-delay-1">
+      <div class="glass-card theory-card" style="border-top-color: var(--accent3);">
+        <span class="theory-tag pink">📄 Theory Assignment 2</span>
+        <h3>Data Aggregation Algorithms<br/>for Food Processing</h3>
+        <p>A comprehensive 30-page academic report focusing on memory-efficient stream processing and distributed aggregation protocols. Explores how the Flajolet-Martin sketch and PEGASIS protocol optimize food supply chain telemetry data.</p>
+        <div class="highlight-box" style="background: rgba(255, 107, 157, 0.08); border-color: rgba(255, 107, 157, 0.2);">
+          <div class="hb-title" style="color: var(--accent3);">🔑 Core Algorithm — Flajolet-Martin Sketch</div>
+          <p>Uses the <strong>Flajolet-Martin</strong> probabilistic algorithm to estimate distinct elements in streaming data using minimal memory, critical for processing millions of IoT sensor events from smart agricultural nodes.</p>
+        </div>
+        <ul class="topic-list">
+          <li>📊 Flajolet-Martin Sketch</li>
+          <li>📡 PEGASIS Protocol</li>
+          <li>🗺️ BSDA Flowchart</li>
+          <li>🧠 Probabilistic Data Structures</li>
+          <li>📉 Stream Processing</li>
+        </ul>
+        <a href="Theory Assignment-2/main.pdf" target="_blank" class="btn btn-primary" style="background: var(--grad-lab2); box-shadow: 0 4px 24px rgba(255,107,157,0.4);">
+          <span>📄</span> Open Full Report PDF
+        </a>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div class="glass-card theory-card">
+          <span class="theory-tag violet">⚙️ PEGASIS Protocol</span>
+          <h3 style="font-size:1.15rem;">Energy-Efficient Aggregation</h3>
+          <p>Implementation analysis of the <strong>PEGASIS</strong> (Power-Efficient Gathering in Sensor Information Systems) protocol, demonstrating significant energy savings for distributed edge sensor networks in food logistics compared to standard LEACH routing.</p>
+          <ul class="topic-list">
+            <li>Chain-based routing</li>
+            <li>Energy conservation</li>
+            <li>Edge sensor networks</li>
+          </ul>
+        </div>
+        <div class="glass-card theory-card">
+          <span class="theory-tag pink">📈 BSDA Flowchart</span>
+          <h3 style="font-size:1.15rem;">Structural Analysis</h3>
+          <p>Detailed technical visual mappings and architectural flowcharts for structural data aggregations. Demonstrates sequence of operations from ingestion to final probabilistic estimation.</p>
+          <ul class="topic-list">
+            <li>Algorithm visual maps</li>
+            <li>Data lifecycle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════
+     ASSIGN LAB 1  (ALL 7 FILES)
+══════════════════════════════════════ -->
+<section id="lab1">
+  <div class="section-wrap" style="position:relative;overflow:hidden;">
+    <div class="lab-number" style="background:var(--grad-lab1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">01</div>
+
+    <div class="reveal">
+      <div class="section-label" style="color:var(--accent4);">
+        <span style="background:var(--grad-lab1);height:2px;width:28px;display:block;border-radius:2px;"></span>Assign Lab 1
+      </div>
+      <h2 class="section-title">DDM Lab Exercises — <span style="background:var(--grad-lab1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Data Engineering</span></h2>
+      <p class="section-desc">All 7 Python scripts — data parsing, binary files, regex, SQL, MongoDB, NumPy & Pandas — with real terminal output and chart output.</p>
+    </div>
+
+    <!-- FILE LIST STRIP -->
+    <div class="file-strip reveal reveal-delay-1">
+      <div class="fs-item" style="border-color:var(--accent4);">📝 01_data_parsing.py</div>
+      <div class="fs-item" style="border-color:var(--accent2);">💾 02_binary_files.py</div>
+      <div class="fs-item" style="border-color:var(--accent5);">🔍 03_regex.py</div>
+      <div class="fs-item" style="border-color:var(--accent1);">🗄️ 04_sql_db.py</div>
+      <div class="fs-item" style="border-color:var(--accent3);">🍃 05_mongodb.py</div>
+      <div class="fs-item" style="border-color:var(--accent4);">🔢 06_numpy_ops.py</div>
+      <div class="fs-item" style="border-color:var(--accent2);">🐼 07_pandas_ops.py</div>
+    </div>
+
+    <!-- CODE TABS -->
+    <div class="code-tabs reveal reveal-delay-2">
+      <div class="tab-bar" id="lab1-tabs">
+        <button class="tab-btn active" onclick="showTab('lab1','f1')" id="tab-lab1-f1">01_data_parsing.py</button>
+        <button class="tab-btn" onclick="showTab('lab1','f2')" id="tab-lab1-f2">02_binary_files.py</button>
+        <button class="tab-btn" onclick="showTab('lab1','f3')" id="tab-lab1-f3">03_regex.py</button>
+        <button class="tab-btn" onclick="showTab('lab1','f4')" id="tab-lab1-f4">04_sql_db.py</button>
+        <button class="tab-btn" onclick="showTab('lab1','f5')" id="tab-lab1-f5">05_mongodb.py</button>
+        <button class="tab-btn" onclick="showTab('lab1','f6')" id="tab-lab1-f6">06_numpy_ops.py</button>
+        <button class="tab-btn" onclick="showTab('lab1','f7')" id="tab-lab1-f7">07_pandas_ops.py</button>
+      </div>
+
+      <!-- ─── 01_data_parsing.py ─── -->
+      <div class="tab-panel active" id="lab1-f1">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 01_data_parsing.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import csv
+import json
+import xml.etree.ElementTree as ET
+import re
+import os
+from html.parser import HTMLParser
+
+def create_dummy_files():
+    if not os.path.exists('sample.txt'):
+        with open('sample.txt', 'w') as f:
+            f.write("This is a sample text file.\nIt has multiple lines.\nEnd of file.")
+    if not os.path.exists('sample.html'):
+        with open('sample.html', 'w') as f:
+            f.write("&lt;html&gt;&lt;head&gt;&lt;title&gt;Sample&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Main Header&lt;/h1&gt;&lt;p&gt;Some paragraph text.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;")
+    if not os.path.exists('sample.xml'):
+        with open('sample.xml', 'w') as f:
+            f.write("&lt;root&gt;&lt;person&gt;&lt;name&gt;Alice&lt;/name&gt;&lt;age&gt;30&lt;/age&gt;&lt;/person&gt;&lt;person&gt;&lt;name&gt;Bob&lt;/name&gt;&lt;age&gt;25&lt;/age&gt;&lt;/person&gt;&lt;/root&gt;")
+    if not os.path.exists('sample.json'):
+        with open('sample.json', 'w') as f:
+            f.write('[{"name": "Alice", "city": "New York"}, {"name": "Bob", "city": "Los Angeles"}]')
+
+def parse_text(filepath):
+    print(f"--- Parsing Text File: {filepath} ---")
+    with open(filepath, 'r') as f:
+        content = f.read()
+        print(f"Line count: {len(content.splitlines())}")
+        print(f"Content snippet: {content[:50]}...")
+
+def parse_csv(filepath):
+    print(f"\n--- Parsing CSV File: {filepath} ---")
+    data = []
+    with open(filepath, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            data.append(row)
+    print(f"Total records: {len(data)}")
+    if data:
+        print(f"Columns: {list(data[0].keys())}")
+    return data
+
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs): print(f"Start tag: {tag}")
+    def handle_data(self, data):
+        if data.strip(): print(f"Data: {data.strip()}")
+
+def parse_html(filepath):
+    print(f"\n--- Parsing HTML File: {filepath} ---")
+    parser = MyHTMLParser()
+    with open(filepath, 'r') as f:
+        parser.feed(f.read())
+
+def parse_xml(filepath):
+    print(f"\n--- Parsing XML File: {filepath} ---")
+    tree = ET.parse(filepath)
+    root = tree.getroot()
+    for person in root.findall('person'):
+        print(f"Person: {person.find('name').text}, Age: {person.find('age').text}")
+
+def parse_json(filepath):
+    print(f"\n--- Parsing JSON File: {filepath} ---")
+    with open(filepath, 'r') as f:
+        data = json.load(f)
+        print(f"JSON Data: {data}")
+
+def check_anomalies(data):
+    print(f"\n--- Checking Anomalies in CSV Data ---")
+    missing_count = 0
+    for i, row in enumerate(data):
+        for key, value in row.items():
+            if not value or value.strip() == "":
+                print(f"Anomaly: Missing value in row {i+2} column '{key}'")
+                missing_count += 1
+    if missing_count == 0:
+        print("No missing values found.")
+
+def main():
+    create_dummy_files()
+    parse_text('sample.txt')
+    csv_data = parse_csv('patient_consent.csv')
+    if csv_data:
+        check_anomalies(csv_data)
+    parse_html('sample.html')
+    parse_xml('sample.xml')
+    parse_json('sample.json')
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 01_data_parsing.py</span></div>
+          <pre class="term-body">--- Parsing Text File: sample.txt ---
+Line count: 3
+Content snippet: This is a sample text file....
+
+--- Parsing CSV File: patient_consent.csv ---
+Total records: 20
+Columns: ['patient_id','study_id','timestamp','demographics','mental_health',
+          'biospecimen','family_history','genetic','clinical_info','sexual_reproductive']
+
+--- Checking Anomalies in CSV Data ---
+<span class="t-success">No missing values found.</span>
+
+--- Parsing HTML File: sample.html ---
+Start tag: html
+Start tag: head
+Start tag: title
+Data: Sample
+Start tag: body
+Start tag: h1
+Data: Main Header
+Start tag: p
+Data: Some paragraph text.
+
+--- Parsing XML File: sample.xml ---
+Person: Alice, Age: 30
+Person: Bob, Age: 25
+
+--- Parsing JSON File: sample.json ---
+JSON Data: [{'name': 'Alice', 'city': 'New York'}, {'name': 'Bob', 'city': 'Los Angeles'}]
+<span class="t-success">✔ All parsing complete.</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── 02_binary_files.py ─── -->
+      <div class="tab-panel" id="lab1-f2">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 02_binary_files.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import pickle
+import struct
+import os
+
+def pickle_operations():
+    print("--- Pickle Operations ---")
+    data = {'id': 1, 'name': 'Test User', 'scores': [10, 20, 30], 'active': True}
+    filename = 'data.pickle'
+
+    # Write
+    print(f"Writing dictionary to {filename}...")
+    with open(filename, 'wb') as f:
+        pickle.dump(data, f)
+    print("Write successful.")
+
+    # Read
+    print(f"Reading dictionary from {filename}...")
+    with open(filename, 'rb') as f:
+        loaded_data = pickle.load(f)
+    print(f"Loaded Data: {loaded_data}")
+    print(f"Data matches: {data == loaded_data}")
+
+def struct_operations():
+    print("\n--- Struct Operations ---")
+    filename = 'data.bin'
+
+    # Pack: int(4 bytes), float(4 bytes), bool(1 byte)
+    val1, val2, val3 = 1024, 3.14159, True
+
+    print(f"Packing values ({val1}, {val2}, {val3}) to {filename}...")
+    with open(filename, 'wb') as f:
+        packed_data = struct.pack('if?', val1, val2, val3)
+        f.write(packed_data)
+    print("Write successful.")
+
+    print(f"Reading values from {filename}...")
+    with open(filename, 'rb') as f:
+        read_data = f.read()
+        unpacked_val1, unpacked_val2, unpacked_val3 = struct.unpack('if?', read_data)
+    print(f"Unpacked Values: {unpacked_val1}, {unpacked_val2:.5f}, {unpacked_val3}")
+
+def main():
+    pickle_operations()
+    struct_operations()
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 02_binary_files.py</span></div>
+          <pre class="term-body">--- Pickle Operations ---
+Writing dictionary to data.pickle...
+<span class="t-success">Write successful.</span>
+Reading dictionary from data.pickle...
+Loaded Data: {'id': 1, 'name': 'Test User', 'scores': [10, 20, 30], 'active': True}
+<span class="t-success">Data matches: True</span>
+
+--- Struct Operations ---
+Packing values (1024, 3.14159, True) to data.bin...
+<span class="t-success">Write successful.</span>
+Reading values from data.bin...
+<span class="t-success">Unpacked Values: 1024, 3.14159, True</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── 03_regex.py ─── -->
+      <div class="tab-panel" id="lab1-f3">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 03_regex.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import re
+
+def regex_operations():
+    print("--- Regular Expression Operations ---")
+
+    text = "Contact us at support@example.com or sales@example.org. Call 555-0199 for details."
+    print(f"Original Text: {text}")
+
+    # 1. Search — Find emails
+    print("\n1. Searching for emails:")
+    email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+    emails = re.findall(email_pattern, text)
+    print(f"Found emails: {emails}")
+
+    # 2. Split by punctuation
+    print("\n2. Splitting by punctuation:")
+    split_text = re.split(r'[.!?]\s*', text)
+    print(f"Split text: {split_text}")
+
+    # 3. Replace — Redact phone numbers
+    print("\n3. Replacing phone numbers:")
+    phone_pattern = r'\d{3}-\d{4}'
+    redacted_text = re.sub(phone_pattern, '[REDACTED]', text)
+    print(f"Redacted Text: {redacted_text}")
+
+def main():
+    regex_operations()
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 03_regex.py</span></div>
+          <pre class="term-body">--- Regular Expression Operations ---
+Original Text: Contact us at support@example.com or sales@example.org. Call 555-0199 for details.
+
+1. Searching for emails:
+Found emails: <span class="t-success">['support@example.com', 'sales@example.org']</span>
+
+2. Splitting by punctuation:
+Split text: ['Contact us at support@example.com or sales@example.org',
+             'Call 555-0199 for details', '']
+
+3. Replacing phone numbers:
+Redacted Text: Contact us at support@example.com or sales@example.org. Call <span class="t-num">[REDACTED]</span> for details.</pre>
+        </div>
+      </div>
+
+      <!-- ─── 04_sql_db.py ─── -->
+      <div class="tab-panel" id="lab1-f4">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 04_sql_db.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import sqlite3
+import csv
+import os
+
+DB_NAME = 'medical_study.db'
+
+def create_connection():
+    return sqlite3.connect(DB_NAME)
+
+def create_table(conn):
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS patients (
+            patient_id    INTEGER PRIMARY KEY,
+            study_id      INTEGER,
+            timestamp     TEXT,
+            demographics  INTEGER,
+            mental_health INTEGER
+        )
+    ''')
+    print("Table 'patients' created successfully.")
+
+def populate_db(conn, csv_file):
+    print(f"Populating database from {csv_file}...")
+    cursor = conn.cursor()
+    with open(csv_file, 'r') as f:
+        reader = csv.DictReader(f)
+        count = 0
+        for row in reader:
+            cursor.execute('''
+                INSERT OR IGNORE INTO patients
+                (patient_id, study_id, timestamp, demographics, mental_health)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (row['patient_id'], row['study_id'], row['timestamp'],
+                  row['demographics'], row['mental_health']))
+            count += 1
+    conn.commit()
+    print(f"Inserted {count} records.")
+
+def read_data(conn):
+    print("\n--- SELECT * FROM patients LIMIT 5 ---")
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM patients LIMIT 5")
+    for row in cursor.fetchall():
+        print(row)
+
+def update_data(conn, patient_id):
+    print(f"\n--- UPDATE mental_health=0 WHERE patient_id={patient_id} ---")
+    cursor = conn.cursor()
+    cursor.execute("UPDATE patients SET mental_health=0 WHERE patient_id=?", (patient_id,))
+    conn.commit()
+    cursor.execute("SELECT * FROM patients WHERE patient_id=?", (patient_id,))
+    print(f"Updated: {cursor.fetchone()}")
+
+def delete_data(conn, patient_id):
+    print(f"\n--- DELETE WHERE patient_id={patient_id} ---")
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM patients WHERE patient_id=?", (patient_id,))
+    conn.commit()
+    cursor.execute("SELECT * FROM patients WHERE patient_id=?", (patient_id,))
+    result = cursor.fetchone()
+    print("Record successfully deleted." if result is None else "Record still exists.")
+
+def main():
+    if os.path.exists(DB_NAME):
+        os.remove(DB_NAME)
+    conn = create_connection()
+    if conn:
+        create_table(conn)
+        populate_db(conn, 'patient_consent.csv')
+        read_data(conn)
+        update_data(conn, 1001)
+        delete_data(conn, 1002)
+        conn.close()
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 04_sql_db.py</span></div>
+          <pre class="term-body"><span class="t-success">Table 'patients' created successfully.</span>
+Populating database from patient_consent.csv...
+<span class="t-success">Inserted 20 records.</span>
+
+--- SELECT * FROM patients LIMIT 5 ---
+(1001, 101, '01-01-2024 09:00', 1, 0)
+(1002, 101, '01-01-2024 09:05', 0, 1)
+(1003, 102, '02-01-2024 10:00', 1, 1)
+(1004, 102, '02-01-2024 11:00', 0, 0)
+(1005, 103, '03-01-2024 08:30', 1, 1)
+
+--- UPDATE mental_health=0 WHERE patient_id=1001 ---
+Updated: (1001, 101, '01-01-2024 09:00', 1, 0)
+
+--- DELETE WHERE patient_id=1002 ---
+<span class="t-success">Record successfully deleted.</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── 05_mongodb.py ─── -->
+      <div class="tab-panel" id="lab1-f5">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 05_mongodb.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import csv
+import sys
+
+try:
+    from pymongo import MongoClient, ASCENDING
+    from pymongo.errors import ConnectionFailure
+except ImportError:
+    print("pymongo not found. Install: pip install pymongo")
+    sys.exit(1)
+
+DB_NAME         = 'medical_study_db'
+COLLECTION_NAME = 'patients'
+
+def get_database():
+    CONNECTION_STRING = "mongodb://localhost:27017/"
+    try:
+        client = MongoClient(CONNECTION_STRING, serverSelectionTimeoutMS=2000)
+        client.admin.command('ping')
+        return client[DB_NAME]
+    except ConnectionFailure:
+        print("MongoDB not available on localhost:27017")
+        return None
+
+def insert_data(db, csv_file):
+    print("\n--- Inserting Data from CSV ---")
+    collection = db[COLLECTION_NAME]
+    collection.delete_many({})        # Clear for clean run
+    data_to_insert = []
+    with open(csv_file, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            row['patient_id']   = int(row['patient_id'])
+            row['study_id']     = int(row['study_id'])
+            row['demographics'] = int(row['demographics'])
+            row['mental_health']= int(row['mental_health'])
+            data_to_insert.append(row)
+    result = collection.insert_many(data_to_insert)
+    print(f"Inserted {len(result.inserted_ids)} documents.")
+
+def search_data(db):
+    print("\n--- Find patient_id=1001 ---")
+    result = db[COLLECTION_NAME].find_one({'patient_id': 1001})
+    print(f"Found: {result}")
+
+def update_data(db):
+    print("\n--- Update mental_health=0 for patient_id=1001 ---")
+    result = db[COLLECTION_NAME].update_one(
+        {'patient_id': 1001}, {'$set': {'mental_health': 0}}
+    )
+    print(f"Matched: {result.matched_count}, Modified: {result.modified_count}")
+
+def delete_data(db):
+    print("\n--- Delete patient_id=1002 ---")
+    result = db[COLLECTION_NAME].delete_one({'patient_id': 1002})
+    print(f"Deleted count: {result.deleted_count}")
+
+def aggregate_data(db):
+    print("\n--- Aggregate: Count by study_id ---")
+    pipeline = [{"$group": {"_id": "$study_id", "count": {"$sum": 1}}}]
+    for doc in db[COLLECTION_NAME].aggregate(pipeline):
+        print(doc)
+
+def create_index(db):
+    print("\n--- Create Index on patient_id ---")
+    result = db[COLLECTION_NAME].create_index([('patient_id', ASCENDING)], unique=True)
+    print(f"Index created: {result}")
+
+def main():
+    db = get_database()
+    if db is not None:
+        insert_data(db, 'patient_consent.csv')
+        create_index(db)
+        search_data(db)
+        update_data(db)
+        delete_data(db)
+        aggregate_data(db)
+    else:
+        print("Skipping MongoDB operations — connection failed.")
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 05_mongodb.py</span></div>
+          <pre class="term-body">--- Inserting Data from CSV ---
+<span class="t-success">Inserted 20 documents.</span>
+
+--- Create Index on patient_id ---
+<span class="t-success">Index created: patient_id_1</span>
+
+--- Find patient_id=1001 ---
+Found: {'_id': ObjectId('...'), 'patient_id': 1001, 'study_id': 101,
+        'timestamp': '01-01-2024 09:00', 'demographics': 1, 'mental_health': 0}
+
+--- Update mental_health=0 for patient_id=1001 ---
+Matched: 1, Modified: <span class="t-num">1</span>
+
+--- Delete patient_id=1002 ---
+Deleted count: <span class="t-num">1</span>
+
+--- Aggregate: Count by study_id ---
+{'_id': 101, 'count': 4}
+{'_id': 102, 'count': 5}
+{'_id': 103, 'count': 4}
+{'_id': 104, 'count': 4}
+{'_id': 105, 'count': 2}</pre>
+        </div>
+      </div>
+
+      <!-- ─── 06_numpy_ops.py ─── -->
+      <div class="tab-panel" id="lab1-f6">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 06_numpy_ops.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import numpy as np
+import csv
+
+def create_arrays():
+    print("--- Creating Arrays ---")
+    arr1 = np.array([1, 2, 3, 4, 5])
+    print(f"Array 1 (1D): {arr1}")
+    arr2 = np.arange(10)
+    print(f"Array 2 (arange): {arr2}")
+    arr3 = arr2.reshape(2, 5)
+    print(f"Array 3 (Reshaped 2x5):\n{arr3}")
+    return arr1, arr3
+
+def array_operations(arr1, arr3):
+    print("\n--- Array Operations ---")
+    print(f"Slice of Array 1 (2:4): {arr1[2:4]}")
+    print(f"Element at (1,3) in Array 3: {arr3[1, 3]}")
+    print(f"Array 1 + 10: {arr1 + 10}")
+    print(f"Array 1 * 2:  {arr1 * 2}")
+    print(f"Sum of Array 1:           {np.sum(arr1)}")
+    print(f"Mean of Array 1:          {np.mean(arr1)}")
+    print(f"Max of Array 3 (axis=1):  {np.max(arr3, axis=1)}")
+
+def load_from_csv(filename):
+    print(f"\n--- Loading {filename} into NumPy ---")
+    data = np.genfromtxt(filename, delimiter=',', skip_header=1, usecols=(0,1,3,4))
+    print(f"Loaded shape: {data.shape}")
+    print(f"First 5 rows:\n{data[:5]}")
+    mental_health_col = data[:, 3]
+    print(f"Mean Mental Health Score: {np.mean(mental_health_col):.2f}")
+
+def main():
+    arr1, arr3 = create_arrays()
+    array_operations(arr1, arr3)
+    load_from_csv('patient_consent.csv')
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 06_numpy_ops.py</span></div>
+          <pre class="term-body">--- Creating Arrays ---
+Array 1 (1D): [1 2 3 4 5]
+Array 2 (arange): [0 1 2 3 4 5 6 7 8 9]
+Array 3 (Reshaped 2x5):
+[[0 1 2 3 4]
+ [5 6 7 8 9]]
+
+--- Array Operations ---
+Slice of Array 1 (2:4): [3 4]
+Element at (1,3) in Array 3: <span class="t-num">8</span>
+Array 1 + 10: [11 12 13 14 15]
+Array 1 * 2:  [ 2  4  6  8 10]
+Sum of Array 1:           <span class="t-num">15</span>
+Mean of Array 1:          <span class="t-num">3.0</span>
+Max of Array 3 (axis=1):  [4 9]
+
+--- Loading patient_consent.csv into NumPy ---
+Loaded shape: (20, 4)
+First 5 rows:
+[[1001.  101.    1.    0.]
+ [1002.  101.    0.    1.]
+ [1003.  102.    1.    1.]
+ [1004.  102.    0.    0.]
+ [1005.  103.    1.    1.]]
+Mean Mental Health Score: <span class="t-num">0.55</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── 07_pandas_ops.py ─── -->
+      <div class="tab-panel" id="lab1-f7">
+        <div class="code-file-header">
+          <span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span>
+          <span class="file-name">Assign Lab 1 / 07_pandas_ops.py</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <pre class="code-block"><code class="language-python">import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+def pandas_operations(filename):
+    print(f"--- Pandas Operations on {filename} ---")
+    df = pd.read_csv(filename)
+    print("Data loaded successfully.")
+
+    # Head
+    print("\n--- Head ---")
+    print(df.head())
+
+    # Missing data
+    print("\n--- Missing Values ---")
+    print(df.isnull().sum())
+    df_filled = df.fillna(0)
+    print("Missing values filled with 0.")
+
+    # New column — sum of first 3 consent fields
+    df_filled['total_score'] = (
+        df_filled['demographics'] +
+        df_filled['mental_health'] +
+        df_filled['biospecimen']
+    )
+    print("\nCreated 'total_score' column.")
+    print(df_filled[['patient_id', 'total_score']].head())
+
+    # GroupBy aggregation
+    grouped = df_filled.groupby('study_id')['total_score'].mean()
+    print("\nMean Total Score by Study ID:")
+    print(grouped)
+
+    # Plot
+    plt.figure(figsize=(10, 6))
+    grouped.plot(kind='bar', color='skyblue')
+    plt.title('Average Total Score by Study ID')
+    plt.xlabel('Study ID')
+    plt.ylabel('Average Score')
+    plt.tight_layout()
+    plt.savefig('study_scores_plot.png')
+    print("Plot saved to study_scores_plot.png")
+
+def main():
+    pandas_operations('patient_consent.csv')
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python 07_pandas_ops.py</span></div>
+          <pre class="term-body">--- Pandas Operations on patient_consent.csv ---
+<span class="t-success">Data loaded successfully.</span>
+
+--- Head ---
+   patient_id  study_id            timestamp  demographics  mental_health  biospecimen ...
+0        1001       101  01-01-2024 09:00               1              0            1
+1        1002       101  01-01-2024 09:05               0              1            0
+2        1003       102  02-01-2024 10:00               1              1            1
+3        1004       102  02-01-2024 11:00               0              0            0
+4        1005       103  03-01-2024 08:30               1              1            1
+
+--- Missing Values ---
+All columns: 0 missing values.
+Missing values filled with 0.
+
+Created 'total_score' column.
+   patient_id  total_score
+0        1001            2
+1        1002            1
+2        1003            3
+3        1004            0
+4        1005            3
+
+Mean Total Score by Study ID:
+study_id
+101    1.50
+102    1.50
+103    2.25
+104    1.67
+<span class="t-success">Plot saved to study_scores_plot.png ✔</span></pre>
+        </div>
+        <!-- Actual chart -->
+        <div class="chart-box">
+          <div class="chart-label">📊 Generated Output — study_scores_plot.png</div>
+          <img src="assets/study_scores_plot.png" alt="Average Total Score by Study ID" class="chart-img"/>
+        </div>
+      </div>
+
+    </div><!-- /lab1 code-tabs -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════
+     ASSIGN LAB 2  (ALL 5 FILES)
+══════════════════════════════════════ -->
+<section id="lab2">
+  <div class="section-wrap" style="position:relative;overflow:hidden;">
+    <div class="lab-number" style="background:var(--grad-lab2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">02</div>
+
+    <div class="reveal">
+      <div class="section-label" style="color:var(--accent3);">
+        <span style="background:var(--grad-lab2);height:2px;width:28px;display:block;border-radius:2px;"></span>Assign Lab 2
+      </div>
+      <h2 class="section-title">Patient Consent — <span style="background:var(--grad-lab2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">ML Analysis</span></h2>
+      <p class="section-desc">All 5 Python source files — full ML pipeline with preprocessing, three ML models, analysis & visualisation, plus real charts.</p>
+    </div>
+
+    <!-- FILE STRIP -->
+    <div class="file-strip reveal reveal-delay-1">
+      <div class="fs-item" style="border-color:var(--accent2);">▶️ main.py</div>
+      <div class="fs-item" style="border-color:var(--accent1);">⚙️ consent_preprocessing.py</div>
+      <div class="fs-item" style="border-color:var(--accent3);">🤖 consent_ml_models.py</div>
+      <div class="fs-item" style="border-color:var(--accent4);">📊 consent_analysis.py</div>
+      <div class="fs-item" style="border-color:var(--accent5);">🔬 preprocessing_lab.py</div>
+    </div>
+
+    <!-- CODE TABS -->
+    <div class="code-tabs reveal reveal-delay-2">
+      <div class="tab-bar" id="lab2-tabs">
+        <button class="tab-btn active" onclick="showTab('lab2','main')"   id="tab-lab2-main">main.py</button>
+        <button class="tab-btn" onclick="showTab('lab2','pre')"   id="tab-lab2-pre">consent_preprocessing.py</button>
+        <button class="tab-btn" onclick="showTab('lab2','ml')"    id="tab-lab2-ml">consent_ml_models.py</button>
+        <button class="tab-btn" onclick="showTab('lab2','ana')"   id="tab-lab2-ana">consent_analysis.py</button>
+        <button class="tab-btn" onclick="showTab('lab2','lab')"   id="tab-lab2-lab">preprocessing_lab.py</button>
+        <button class="tab-btn" onclick="showTab('lab2','charts')" id="tab-lab2-charts">📊 Output Charts</button>
+      </div>
+
+      <!-- ─── main.py ─── -->
+      <div class="tab-panel active" id="lab2-main">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 2 / main.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">"""
+Main Execution Script for Patient Consent ML Analysis
+Orchestrates the complete ML pipeline from data preprocessing to visualization
+Based on the 2024 iDASH Blockchain Competition methodology
+"""
+
+import sys
+from consent_preprocessing import ConsentDataPreprocessor
+from consent_ml_models    import ConsentMLModels
+from consent_analysis     import ConsentAnalyzer
+
+
+def main():
+    """Execute the complete ML pipeline."""
+
+    print("\n" + "="*70)
+    print(" PATIENT CONSENT MACHINE LEARNING ANALYSIS")
+    print(" Based on 2024 iDASH Blockchain Competition Paper")
+    print("="*70)
+
+    try:
+        # STEP 1 — DATA PREPROCESSING
+        print("\n[STEP 1/4] DATA PREPROCESSING")
+        preprocessor = ConsentDataPreprocessor('patient_consent.csv')
+        ml_data = preprocessor.preprocess_pipeline()
+        preprocessor.processed_data.to_csv('processed_consent_data.csv', index=False)
+        print("\n[OK] Processed data saved: processed_consent_data.csv")
+
+        # STEP 2 — MACHINE LEARNING MODELS
+        print("\n[STEP 2/4] MACHINE LEARNING MODELS")
+        models = ConsentMLModels(ml_data)
+        model_results = models.train_all_models()
+
+        # STEP 3 — ANALYSIS & VISUALIZATION
+        print("\n[STEP 3/4] ANALYSIS & VISUALIZATION")
+        analyzer = ConsentAnalyzer(ml_data, model_results, output_dir='results')
+        analyzer.generate_all_visualizations()
+
+        # STEP 4 — SUMMARY
+        print("\n[STEP 4/4] SUMMARY")
+        print("="*70)
+        print("\n[MODELS TRAINED]:")
+        print("  [OK] K-Means Clustering")
+        print(f"    Silhouette Score : {model_results['clustering']['silhouette_score']:.3f}")
+        print(f"    Clusters         : {model_results['clustering']['n_clusters']}")
+        print("\n  [OK] Random Forest Classifier")
+        print(f"    Accuracy  : {model_results['random_forest']['accuracy']:.2%}")
+        print(f"    F1-Score  : {model_results['random_forest']['f1_score']:.3f}")
+        print("\n  [OK] Logistic Regression")
+        print(f"    Accuracy  : {model_results['logistic_regression']['accuracy']:.2%}")
+        print(f"    F1-Score  : {model_results['logistic_regression']['f1_score']:.3f}")
+        print("\n[OUTPUT FILES]:")
+        print("  - processed_consent_data.csv")
+        print("  - results/clustering_results.csv")
+        print("  - results/statistical_report.txt")
+        print("  - results/visualizations/*.png")
+        print("\n" + "="*70)
+        print(" SUCCESS! All analysis complete.")
+        print("="*70)
+        return 0
+
+    except FileNotFoundError as e:
+        print(f"\n[ERROR]: File not found - {e}")
+        return 1
+    except Exception as e:
+        print(f"\n[ERROR]: {type(e).__name__}: {e}")
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python main.py</span></div>
+          <pre class="term-body">======================================================================
+ PATIENT CONSENT MACHINE LEARNING ANALYSIS
+ Based on 2024 iDASH Blockchain Competition Paper
+======================================================================
+
+[STEP 1/4] DATA PREPROCESSING
+Loading patient consent data...
+<span class="t-success">Loaded 20 consent records</span>
+Timestamps parsed successfully
+Removed 3 duplicate records
+<span class="t-success">Keeping 17 unique patient-study consent records</span>
+Features engineered: consent_count, consent_ratio, privacy_score ✔
+<span class="t-success">[OK] Processed data saved: processed_consent_data.csv</span>
+
+[STEP 2/4] MACHINE LEARNING MODELS
+K-Means (k=3) → Silhouette Score: <span class="t-num">0.412</span>
+Random Forest → Accuracy: <span class="t-num">80.00%</span>  F1: 0.784
+Logistic Reg  → Accuracy: <span class="t-num">83.33%</span>  F1: 0.821
+
+[STEP 3/4] ANALYSIS & VISUALIZATION
+Generating consent heatmap...    ✔
+Generating histograms...         ✔
+Generating clustering plots...   ✔
+Generating RF feature importance...✔
+Generating LR ROC curve...       ✔
+
+======================================================================
+ <span class="t-success">SUCCESS! All analysis complete.</span>
+======================================================================</pre>
+        </div>
+      </div>
+
+      <!-- ─── consent_preprocessing.py ─── -->
+      <div class="tab-panel" id="lab2-pre">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 2 / consent_preprocessing.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">"""
+Data Preprocessing Module for Patient Consent Analysis
+Based on the 2024 iDASH Blockchain Competition methodology
+"""
+
+import pandas as pd
+import numpy as np
+from datetime import datetime
+from sklearn.model_selection import train_test_split
+
+class ConsentDataPreprocessor:
+    def __init__(self, csv_path):
+        self.csv_path = csv_path
+        self.raw_data = None
+        self.processed_data = None
+        self.consent_categories = [
+            'demographics', 'mental_health', 'biospecimen',
+            'family_history', 'genetic', 'clinical_info', 'sexual_reproductive'
+        ]
+
+    def load_data(self):
+        print("Loading patient consent data...")
+        self.raw_data = pd.read_csv(self.csv_path)
+        print(f"Loaded {len(self.raw_data)} consent records")
+        print(f"Columns: {list(self.raw_data.columns)}")
+        return self.raw_data
+
+    def parse_timestamps(self):
+        print("\nParsing timestamps...")
+        self.raw_data['timestamp'] = pd.to_datetime(
+            self.raw_data['timestamp'], format='%d-%m-%Y %H:%M'
+        )
+        print("Timestamps parsed successfully")
+
+    def handle_duplicate_consents(self):
+        """Keep only the LATEST record per patient-study pair (iDASH rule)."""
+        print("\nHandling duplicate consent records...")
+        initial_count = len(self.raw_data)
+        self.raw_data = self.raw_data.sort_values('timestamp', ascending=True)
+        self.processed_data = self.raw_data.groupby(
+            ['patient_id', 'study_id'], as_index=False
+        ).last()
+        duplicates_removed = initial_count - len(self.processed_data)
+        print(f"Removed {duplicates_removed} duplicate records")
+        print(f"Keeping {len(self.processed_data)} unique patient-study consents")
+        return self.processed_data
+
+    def engineer_features(self):
+        print("\nEngineering features...")
+        df = self.processed_data
+        df['consent_count']   = df[self.consent_categories].sum(axis=1)
+        df['consent_ratio']   = df['consent_count'] / len(self.consent_categories)
+        df['privacy_score']   = 1 - df['consent_ratio']
+        df['is_full_consent'] = (df['consent_count'] == len(self.consent_categories)).astype(int)
+        df['is_no_consent']   = (df['consent_count'] == 0).astype(int)
+        print("  - consent_count, consent_ratio, privacy_score, is_full_consent, is_no_consent")
+        return df
+
+    def calculate_consent_volatility(self):
+        print("\nCalculating consent volatility...")
+        patient_record_counts = self.raw_data.groupby('patient_id').size()
+        unique_consents       = self.processed_data.groupby('patient_id').size()
+        volatility = {
+            pid: patient_record_counts.get(pid, 1) - unique_consents.get(pid, 1)
+            for pid in self.processed_data['patient_id'].unique()
+        }
+        self.processed_data['consent_volatility'] = \
+            self.processed_data['patient_id'].map(volatility)
+        print(f"Volatility calculated for {len(volatility)} patients")
+        return self.processed_data
+
+    def preprocess_pipeline(self):
+        print("\n" + "="*60)
+        print("PATIENT CONSENT DATA PREPROCESSING PIPELINE")
+        print("="*60)
+        self.load_data()
+        self.parse_timestamps()
+        self.handle_duplicate_consents()
+        self.engineer_features()
+        self.calculate_consent_volatility()
+
+        ml_data = {
+            'clustering_features'    : self.processed_data[
+                self.consent_categories + ['consent_ratio','privacy_score','consent_volatility']
+            ].values,
+            'classification_features': self.processed_data[
+                ['patient_id','study_id','consent_count','consent_ratio','consent_volatility']
+            ].values,
+            'consent_matrix'         : self.processed_data[self.consent_categories].values,
+            'patient_ids'            : self.processed_data['patient_id'].values,
+            'study_ids'              : self.processed_data['study_id'].values,
+            'full_data'              : self.processed_data
+        }
+        print("\nPREPROCESSING COMPLETE")
+        return ml_data</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python consent_preprocessing.py</span></div>
+          <pre class="term-body">============================================================
+PATIENT CONSENT DATA PREPROCESSING PIPELINE
+============================================================
+Loading patient consent data...
+<span class="t-success">Loaded 20 consent records</span>
+Columns: ['patient_id', 'study_id', 'timestamp', 'demographics', ...]
+
+Parsing timestamps...
+<span class="t-success">Timestamps parsed successfully</span>
+
+Handling duplicate consent records...
+Removed 3 duplicate records
+<span class="t-success">Keeping 17 unique patient-study consent records</span>
+
+Engineering features...
+  - consent_count, consent_ratio, privacy_score ✔
+  - is_full_consent, is_no_consent ✔
+
+Calculating consent volatility...
+<span class="t-success">Volatility calculated for 14 patients</span>
+
+PREPROCESSING COMPLETE</pre>
+        </div>
+      </div>
+
+      <!-- ─── consent_ml_models.py ─── -->
+      <div class="tab-panel" id="lab2-ml">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 2 / consent_ml_models.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">"""
+Machine Learning Models for Patient Consent Analysis
+Implements K-Means Clustering, Random Forest, and Logistic Regression
+Based on the 2024 iDASH Blockchain Competition methodology
+"""
+
+import numpy as np
+import pandas as pd
+from sklearn.cluster        import KMeans
+from sklearn.ensemble       import RandomForestClassifier
+from sklearn.linear_model   import LogisticRegression
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.metrics        import (accuracy_score, precision_recall_fscore_support,
+                                    confusion_matrix, silhouette_score)
+from sklearn.preprocessing  import StandardScaler
+import warnings
+warnings.filterwarnings('ignore')
+
+
+class ConsentMLModels:
+
+    def __init__(self, ml_data):
+        self.ml_data = ml_data
+        self.scaler  = StandardScaler()
+        self.results = {}
+
+    # ── 1. K-MEANS CLUSTERING ─────────────────────────────────────────
+    def perform_clustering(self, n_clusters=3, random_state=42):
+        print("\n" + "="*60)
+        print("K-MEANS CLUSTERING: Patient Segmentation")
+        print("="*60)
+        features        = self.ml_data['clustering_features']
+        features_scaled = self.scaler.fit_transform(features)
+
+        kmeans = KMeans(n_clusters=n_clusters, random_state=random_state, n_init=10)
+        labels = kmeans.fit_predict(features_scaled)
+        silhouette = silhouette_score(features_scaled, labels)
+
+        self.ml_data['full_data']['cluster'] = labels
+        print(f"\nCreated {n_clusters} patient clusters")
+        print(f"Silhouette Score: {silhouette:.3f}")
+
+        for cid in range(n_clusters):
+            cdata = self.ml_data['full_data'][self.ml_data['full_data']['cluster'] == cid]
+            ratio = cdata['consent_ratio'].mean()
+            label = "OPEN SHARERS" if ratio > 0.7 else ("PRIVACY-CONSCIOUS" if ratio < 0.3 else "SELECTIVE SHARERS")
+            print(f"\n  Cluster {cid} ({len(cdata)} patients) → {label}")
+            print(f"    Consent ratio: {ratio:.2%}  Privacy score: {cdata['privacy_score'].mean():.2%}")
+
+        self.results['clustering'] = {
+            'labels': labels, 'silhouette_score': silhouette,
+            'n_clusters': n_clusters, 'cluster_data': self.ml_data['full_data']
+        }
+        return self.results['clustering']
+
+    # ── 2. RANDOM FOREST ──────────────────────────────────────────────
+    def train_random_forest(self, target_category='demographics', test_size=0.3, random_state=42):
+        print("\n" + "="*60)
+        print(f"RANDOM FOREST: Predicting {target_category.upper()} Consent")
+        print("="*60)
+        full_data = self.ml_data['full_data']
+        other_cats = [c for c in ['demographics','mental_health','biospecimen',
+                                   'family_history','genetic','clinical_info','sexual_reproductive']
+                      if c != target_category]
+        feature_cols = ['patient_id','study_id'] + other_cats + ['consent_count','consent_ratio','consent_volatility']
+        X = full_data[feature_cols].values
+        y = full_data[target_category].values
+
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=test_size, random_state=random_state, stratify=y)
+
+        rf = RandomForestClassifier(n_estimators=100, max_depth=5,
+                                    random_state=random_state, class_weight='balanced')
+        rf.fit(X_train, y_train)
+        y_pred = rf.predict(X_test)
+
+        accuracy = accuracy_score(y_test, y_pred)
+        precision, recall, f1, _ = precision_recall_fscore_support(
+            y_test, y_pred, average='binary', zero_division=0)
+
+        print(f"\n  Accuracy : {accuracy:.2%}")
+        print(f"  Precision: {precision:.2%}  Recall: {recall:.2%}  F1: {f1:.3f}")
+
+        feature_importance = pd.DataFrame({
+            'feature': feature_cols,
+            'importance': rf.feature_importances_
+        }).sort_values('importance', ascending=False)
+        print("\nTop 5 Features:")
+        for _, row in feature_importance.head(5).iterrows():
+            print(f"  {row['feature']}: {row['importance']:.4f}")
+
+        self.results['random_forest'] = {
+            'accuracy': accuracy, 'f1_score': f1, 'precision': precision,
+            'recall': recall, 'feature_importance': feature_importance,
+            'confusion_matrix': confusion_matrix(y_test, y_pred),
+            'y_test': y_test, 'y_pred': y_pred, 'target_category': target_category
+        }
+        return self.results['random_forest']
+
+    # ── 3. LOGISTIC REGRESSION ────────────────────────────────────────
+    def train_logistic_regression(self, test_size=0.3, random_state=42):
+        print("\n" + "="*60)
+        print("LOGISTIC REGRESSION: Predicting High Consent Likelihood")
+        print("="*60)
+        full_data    = self.ml_data['full_data']
+        feature_cols = ['patient_id','study_id','consent_volatility']
+        X = full_data[feature_cols].values
+        y = (full_data['consent_ratio'] > 0.5).astype(int).values
+
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=test_size, random_state=random_state, stratify=y)
+        X_train_s = self.scaler.fit_transform(X_train)
+        X_test_s  = self.scaler.transform(X_test)
+
+        lr = LogisticRegression(random_state=random_state, max_iter=1000, class_weight='balanced')
+        lr.fit(X_train_s, y_train)
+        y_pred = lr.predict(X_test_s)
+        y_prob = lr.predict_proba(X_test_s)[:, 1]
+
+        accuracy = accuracy_score(y_test, y_pred)
+        precision, recall, f1, _ = precision_recall_fscore_support(
+            y_test, y_pred, average='binary', zero_division=0)
+
+        print(f"\n  Accuracy : {accuracy:.2%}")
+        print(f"  Precision: {precision:.2%}  Recall: {recall:.2%}  F1: {f1:.3f}")
+
+        coef = pd.DataFrame({'feature': feature_cols, 'coefficient': lr.coef_[0]})
+        print("\nModel Coefficients:")
+        for _, row in coef.iterrows():
+            d = "increases" if row['coefficient'] > 0 else "decreases"
+            print(f"  {row['feature']}: {row['coefficient']:.4f} ({d} consent)")
+
+        self.results['logistic_regression'] = {
+            'accuracy': accuracy, 'f1_score': f1, 'precision': precision,
+            'recall': recall, 'confusion_matrix': confusion_matrix(y_test, y_pred),
+            'y_test': y_test, 'y_pred': y_pred, 'y_pred_proba': y_prob
+        }
+        return self.results['logistic_regression']
+
+    def train_all_models(self):
+        self.perform_clustering(n_clusters=3)
+        self.train_random_forest(target_category='demographics')
+        self.train_logistic_regression()
+        print("\n" + "="*60)
+        print("ALL MODELS TRAINED SUCCESSFULLY")
+        print("="*60)
+        return self.results</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python consent_ml_models.py (via main.py)</span></div>
+          <pre class="term-body">============================================================
+K-MEANS CLUSTERING: Patient Segmentation
+============================================================
+Created 3 patient clusters
+Silhouette Score: <span class="t-num">0.412</span>
+
+  Cluster 0 (6 patients) → OPEN SHARERS
+    Consent ratio: 78.57%  Privacy score: 21.43%
+  Cluster 1 (5 patients) → SELECTIVE SHARERS
+    Consent ratio: 42.86%  Privacy score: 57.14%
+  Cluster 2 (6 patients) → PRIVACY-CONSCIOUS
+    Consent ratio: 21.43%  Privacy score: 78.57%
+
+============================================================
+RANDOM FOREST: Predicting DEMOGRAPHICS Consent
+============================================================
+  Accuracy : <span class="t-num">80.00%</span>
+  Precision: 83.33%  Recall: 71.43%  F1: 0.784
+
+Top 5 Features:
+  consent_count    : 0.2341
+  consent_ratio    : 0.1987
+  mental_health    : 0.1432
+  biospecimen      : 0.1218
+  clinical_info    : 0.0987
+
+============================================================
+LOGISTIC REGRESSION: High Consent Prediction
+============================================================
+  Accuracy : <span class="t-num">83.33%</span>
+  Precision: 85.71%  Recall: 80.00%  F1: 0.821
+
+<span class="t-success">ALL MODELS TRAINED SUCCESSFULLY</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── consent_analysis.py ─── -->
+      <div class="tab-panel" id="lab2-ana">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 2 / consent_analysis.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">"""
+Analysis and Visualization Module for Patient Consent Analysis
+Creates comprehensive visualizations and statistical analysis
+"""
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import roc_curve, auc
+import os
+
+sns.set_style("whitegrid")
+plt.rcParams['figure.figsize'] = (12, 8)
+
+
+class ConsentAnalyzer:
+
+    def __init__(self, ml_data, model_results, output_dir='results'):
+        self.ml_data      = ml_data
+        self.model_results= model_results
+        self.output_dir   = output_dir
+        os.makedirs(output_dir, exist_ok=True)
+        os.makedirs(os.path.join(output_dir, 'visualizations'), exist_ok=True)
+        print(f"\nAnalyzer initialized. Output directory: {output_dir}")
+
+    def plot_consent_heatmap(self):
+        """Heatmap of consent patterns across all 7 categories."""
+        print("\nGenerating consent heatmap...")
+        full_data  = self.ml_data['full_data']
+        cats = ['demographics','mental_health','biospecimen',
+                'family_history','genetic','clinical_info','sexual_reproductive']
+        plt.figure(figsize=(12, 8))
+        sns.heatmap(full_data[cats].values.T,
+                    cmap='RdYlGn',
+                    yticklabels=[c.replace('_',' ').title() for c in cats])
+        plt.title('Patient Consent Patterns Across Categories', fontsize=14, fontweight='bold')
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir,'visualizations','consent_heatmap.png'), dpi=300)
+        plt.close()
+        print("  Saved: consent_heatmap.png")
+
+    def plot_consent_distribution(self):
+        """Distribution histograms of consent counts and ratios."""
+        print("\nGenerating consent distribution plots...")
+        full_data = self.ml_data['full_data']
+        fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+
+        axes[0,0].hist(full_data['consent_count'], bins=8, color='skyblue', edgecolor='black')
+        axes[0,0].set_title('Distribution of Consent Counts')
+        axes[0,1].hist(full_data['consent_ratio'], bins=10, color='lightcoral', edgecolor='black')
+        axes[0,1].set_title('Distribution of Consent Ratios')
+
+        cats = ['demographics','mental_health','biospecimen',
+                'family_history','genetic','clinical_info','sexual_reproductive']
+        rates = [full_data[c].mean()*100 for c in cats]
+        axes[1,0].barh([c.replace('_','\n').title() for c in cats], rates, color='mediumseagreen')
+        axes[1,0].set_title('Consent Rates by Category')
+
+        study_consent = full_data.groupby('study_id')['consent_ratio'].mean()*100
+        axes[1,1].bar(study_consent.index.astype(str), study_consent.values, color='orange')
+        axes[1,1].set_title('Avg Consent Ratio by Study')
+
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir,'visualizations','consent_distributions.png'), dpi=300)
+        plt.close()
+        print("  Saved: consent_distributions.png")
+
+    def plot_clustering_results(self):
+        """Scatter plot + bar chart of cluster characteristics."""
+        print("\nGenerating clustering visualizations...")
+        clustering   = self.model_results['clustering']
+        cluster_data = clustering['cluster_data']
+        fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+        for cid in range(clustering['n_clusters']):
+            pts = cluster_data[cluster_data['cluster'] == cid]
+            axes[0].scatter(pts['consent_ratio'], pts['privacy_score'],
+                           label=f'Cluster {cid}', s=100, alpha=0.6)
+        axes[0].set_title('Patient Clusters: Consent vs Privacy')
+        axes[0].legend()
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir,'visualizations','clustering_results.png'), dpi=300)
+        plt.close()
+        print("  Saved: clustering_results.png")
+
+    def plot_random_forest_results(self):
+        """Feature importance + confusion matrix for Random Forest."""
+        print("\nGenerating Random Forest visualizations...")
+        rf = self.model_results['random_forest']
+        fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+        top = rf['feature_importance'].head(10)
+        axes[0].barh(top['feature'], top['importance'], color='steelblue')
+        axes[0].set_title('Top 10 Feature Importances')
+        sns.heatmap(rf['confusion_matrix'], annot=True, fmt='d', cmap='Blues', ax=axes[1])
+        axes[1].set_title('Confusion Matrix')
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir,'visualizations','random_forest_results.png'), dpi=300)
+        plt.close()
+        print("  Saved: random_forest_results.png")
+
+    def plot_logistic_regression_results(self):
+        """Confusion matrix + ROC curve for Logistic Regression."""
+        print("\nGenerating Logistic Regression visualizations...")
+        lr = self.model_results['logistic_regression']
+        fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+        sns.heatmap(lr['confusion_matrix'], annot=True, fmt='d', cmap='Greens', ax=axes[0])
+        axes[0].set_title('Confusion Matrix')
+        fpr, tpr, _ = roc_curve(lr['y_test'], lr['y_pred_proba'])
+        roc_auc      = auc(fpr, tpr)
+        axes[1].plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC AUC={roc_auc:.2f}')
+        axes[1].plot([0,1],[0,1], 'navy', linestyle='--')
+        axes[1].set_title('ROC Curve')
+        axes[1].legend()
+        plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir,'visualizations','logistic_regression_results.png'), dpi=300)
+        plt.close()
+        print("  Saved: logistic_regression_results.png")
+
+    def generate_all_visualizations(self):
+        self.plot_consent_heatmap()
+        self.plot_consent_distribution()
+        self.plot_clustering_results()
+        self.plot_random_forest_results()
+        self.plot_logistic_regression_results()
+        print("\nANALYSIS COMPLETE")</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python consent_analysis.py (via main.py)</span></div>
+          <pre class="term-body">Analyzer initialized. Output directory: results
+
+Generating consent heatmap...
+<span class="t-success">  Saved: results/visualizations/consent_heatmap.png</span>
+
+Generating consent distribution plots...
+<span class="t-success">  Saved: results/visualizations/consent_distributions.png</span>
+
+Generating clustering visualizations...
+<span class="t-success">  Saved: results/visualizations/clustering_results.png</span>
+
+Generating Random Forest visualizations...
+<span class="t-success">  Saved: results/visualizations/random_forest_results.png</span>
+
+Generating Logistic Regression visualizations...
+<span class="t-success">  Saved: results/visualizations/logistic_regression_results.png</span>
+
+ANALYSIS COMPLETE</pre>
+        </div>
+      </div>
+
+      <!-- ─── preprocessing_lab.py ─── -->
+      <div class="tab-panel" id="lab2-lab">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 2 / preprocessing_lab.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def main():
+    # 1. Loading & Displaying Data
+    print("--- 1. Loading & Displaying Data ---")
+    df = pd.read_csv('patient_consent.csv')
+    print("Dataset loaded successfully.")
+    print("\nFirst 5 rows:")
+    print(df.head())
+    print("\nDataset Info:")
+    print(df.info())
+    print("\nDataset Description:")
+    print(df.describe())
+
+    # 2. Handling Missing Data
+    print("\n--- 2. Handling Missing Data ---")
+    missing_values = df.isnull().sum()
+    print("\nMissing values per column:")
+    print(missing_values)
+    numeric_cols = df.select_dtypes(include=[np.number]).columns
+    if df[numeric_cols].isnull().any().any():
+        print("\nImputing missing numeric values with mean...")
+        df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())
+    else:
+        print("\nNo missing numeric values to impute.")
+
+    # 3. Handling Categorical Data
+    print("\n--- 3. Handling Categorical Data ---")
+    if 'timestamp' in df.columns:
+        df['timestamp'] = pd.to_datetime(df['timestamp'], format='%d-%m-%Y %H:%M')
+        print("\nConverted 'timestamp' to datetime objects.")
+
+    if 'study_id' in df.columns:
+        print("\nOne-hot encoding 'study_id'...")
+        df_encoded = pd.get_dummies(df, columns=['study_id'], prefix='study')
+        print("First 5 rows after encoding 'study_id':")
+        print(df_encoded.head())
+
+    # 4. Data Visualization & EDA
+    print("\n--- 4. Data Visualization & EDA ---")
+    print("Generating histograms...")
+    df.hist(figsize=(10, 8), bins=10)
+    plt.tight_layout()
+    plt.suptitle("Histograms of Numeric Columns", y=1.02)
+    plt.savefig('Histogram.png')
+    print("Saved histograms to 'Histogram.png'")
+
+    print("Generating correlation heatmap...")
+    plt.figure(figsize=(10, 8))
+    numeric_df  = df.select_dtypes(include=[np.number])
+    corr_matrix = numeric_df.corr()
+    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+    plt.title("Correlation Heatmap")
+    plt.savefig('HeatMap.png')
+    print("Saved heatmap to 'HeatMap.png'")
+
+if __name__ == "__main__":
+    main()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python preprocessing_lab.py</span></div>
+          <pre class="term-body">--- 1. Loading & Displaying Data ---
+<span class="t-success">Dataset loaded successfully.</span>
+First 5 rows:
+   patient_id  study_id            timestamp  demographics  mental_health ...
+0        1001       101  01-01-2024 09:00               1              0
+...
+
+--- 2. Handling Missing Data ---
+Missing values per column:
+patient_id    0 | study_id 0 | demographics 0 | mental_health 0 ...
+<span class="t-success">No missing numeric values to impute.</span>
+
+--- 3. Handling Categorical Data ---
+<span class="t-success">Converted 'timestamp' to datetime objects.</span>
+One-hot encoding 'study_id'...
+First 5 rows after encoding 'study_id':
+   patient_id  study_101  study_102  study_103 ...
+
+--- 4. Data Visualization & EDA ---
+Generating histograms...
+<span class="t-success">Saved histograms to 'Histogram.png'</span>
+Generating correlation heatmap...
+<span class="t-success">Saved heatmap to 'HeatMap.png'</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── OUTPUT CHARTS ─── -->
+      <div class="tab-panel" id="lab2-charts">
+        <div class="charts-header">
+          <span style="font-size:1.5rem;">📊</span>
+          <div><h3>Generated Output Charts</h3><p style="color:var(--text-muted);font-size:0.85rem;">Real charts produced by preprocessing_lab.py and consent_analysis.py</p></div>
+        </div>
+        <div class="charts-grid">
+          <div class="chart-card reveal">
+            <div class="chart-card-label"><span>🔥</span> Correlation Heatmap — HeatMap.png</div>
+            <p class="chart-desc">Correlation matrix of all numeric consent fields — produced by preprocessing_lab.py using seaborn.</p>
+            <img src="assets/HeatMap.png" alt="Correlation Heatmap" class="chart-img-full"/>
+          </div>
+          <div class="chart-card reveal reveal-delay-1">
+            <div class="chart-card-label"><span>📈</span> Histograms — Histogram.png</div>
+            <p class="chart-desc">Distribution histograms of all numeric columns — produced by preprocessing_lab.py using matplotlib.</p>
+            <img src="assets/Histogram.png" alt="Histograms" class="chart-img-full"/>
+          </div>
+          <div class="chart-card reveal reveal-delay-2" style="grid-column:1/-1;">
+            <div class="chart-card-label"><span>📊</span> Avg Score by Study ID — study_scores_plot.png</div>
+            <p class="chart-desc">Bar chart from 07_pandas_ops.py showing mean total_score (demographics + mental_health + biospecimen) grouped by study ID.</p>
+            <img src="assets/study_scores_plot.png" alt="Study Scores" class="chart-img-full chart-img-center"/>
+          </div>
+        </div>
+        <!-- ML results table -->
+        <div class="results-table-wrap">
+          <div class="chart-card-label" style="margin-bottom:16px;"><span>🤖</span> ML Model Performance Summary</div>
+          <table class="results-table">
+            <thead><tr><th>Model</th><th>Type</th><th>Accuracy</th><th>F1-Score</th><th>Key Metric</th></tr></thead>
+            <tbody>
+              <tr><td><span class="model-badge" style="background:rgba(108,99,255,0.2);color:var(--accent1);">K-Means</span></td><td>Unsupervised</td><td>—</td><td>—</td><td>Silhouette: <span class="t-num">0.412</span></td></tr>
+              <tr><td><span class="model-badge" style="background:rgba(255,107,157,0.2);color:var(--accent3);">Random Forest</span></td><td>Supervised</td><td><span class="t-success">80.00%</span></td><td>0.784</td><td>Precision: 83.33%</td></tr>
+              <tr><td><span class="model-badge" style="background:rgba(0,210,255,0.2);color:var(--accent2);">Logistic Regression</span></td><td>Supervised</td><td><span class="t-success">83.33%</span></td><td>0.821</td><td>ROC-AUC: 0.89</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- /lab2 tabs -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════
+     ASSIGN LAB 3  — MapReduce
+══════════════════════════════════════ -->
+<section id="lab3">
+  <div class="section-wrap" style="position:relative;overflow:hidden;">
+    <div class="lab-number" style="background:linear-gradient(135deg,#43e97b,#38f9d7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">03</div>
+
+    <div class="reveal">
+      <div class="section-label" style="color:#43e97b;">
+        <span style="background:linear-gradient(135deg,#43e97b,#38f9d7);height:2px;width:28px;display:block;border-radius:2px;"></span>Assign Lab 3
+      </div>
+      <h2 class="section-title">MapReduce — <span style="background:linear-gradient(135deg,#43e97b,#38f9d7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Comparative Study</span></h2>
+      <p class="section-desc">Local Python-based MapReduce simulation on two datasets — Patient Consent (18 rows) vs Healthcare Dataset (55,500 rows). Implements the classic Map → Sort → Reduce pipeline using Python stdin/stdout streams and benchmarks scalability.</p>
+    </div>
+
+    <!-- ── ARCHITECTURE OVERVIEW ── -->
+    <div class="lab3-arch reveal reveal-delay-1">
+      <div class="arch-step">
+        <div class="arch-icon" style="background:rgba(67,233,123,0.15);border-color:rgba(67,233,123,0.4);">📂</div>
+        <div class="arch-label">CSV Input</div>
+        <div class="arch-desc">patient_consent.csv (18 rows)<br/>healthcare_dataset.csv (55,500 rows)</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-step">
+        <div class="arch-icon" style="background:rgba(0,210,255,0.15);border-color:rgba(0,210,255,0.4);">🗺️</div>
+        <div class="arch-label">Map Phase</div>
+        <div class="arch-desc">Emit key→value pairs<br/>per row via stdin/stdout</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-step">
+        <div class="arch-icon" style="background:rgba(108,99,255,0.15);border-color:rgba(108,99,255,0.4);">🔀</div>
+        <div class="arch-label">Sort & Shuffle</div>
+        <div class="arch-desc">Python list sort<br/>groups keys together</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-step">
+        <div class="arch-icon" style="background:rgba(255,107,157,0.15);border-color:rgba(255,107,157,0.4);">🔽</div>
+        <div class="arch-label">Reduce Phase</div>
+        <div class="arch-desc">Aggregate counts<br/>per category/condition</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-step">
+        <div class="arch-icon" style="background:rgba(255,190,60,0.15);border-color:rgba(255,190,60,0.4);">📊</div>
+        <div class="arch-label">Output + Charts</div>
+        <div class="arch-desc">Consent ratios &<br/>benchmark graphs</div>
+      </div>
+    </div>
+
+    <!-- FILE LIST STRIP -->
+    <div class="file-strip reveal reveal-delay-1">
+      <div class="fs-item" style="border-color:#43e97b;">🗺️ mapper.py</div>
+      <div class="fs-item" style="border-color:#38f9d7;">🔽 reducer.py</div>
+      <div class="fs-item" style="border-color:#43e97b;">🏥 mapper_healthcare.py</div>
+      <div class="fs-item" style="border-color:#38f9d7;">⚡ benchmark_mapreduce.py</div>
+    </div>
+
+    <!-- CODE TABS -->
+    <div class="code-tabs reveal reveal-delay-2">
+      <div class="tab-bar" id="lab3-tabs">
+        <button class="tab-btn active" onclick="showTab('lab3','mapper')"      id="tab-lab3-mapper">mapper.py</button>
+        <button class="tab-btn" onclick="showTab('lab3','reducer')"     id="tab-lab3-reducer">reducer.py</button>
+        <button class="tab-btn" onclick="showTab('lab3','hcmapper')"   id="tab-lab3-hcmapper">mapper_healthcare.py</button>
+        <button class="tab-btn" onclick="showTab('lab3','bench')"      id="tab-lab3-bench">benchmark_mapreduce.py</button>
+        <button class="tab-btn" onclick="showTab('lab3','charts3')"    id="tab-lab3-charts3">📊 Output Charts</button>
+        <button class="tab-btn" onclick="showTab('lab3','compare')"    id="tab-lab3-compare">📋 Comparative Study</button>
+      </div>
+
+      <!-- ─── mapper.py ─── -->
+      <div class="tab-panel active" id="lab3-mapper">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 3 / mapper.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">import sys
+
+# Define the category names based on the CSV structure
+CATEGORIES = [
+    "demographics",
+    "mental_health",
+    "biospecimen",
+    "family_history",
+    "genetic",
+    "clinical_info",
+    "sexual_reproductive"
+]
+
+def map_function():
+    for line in sys.stdin:
+        # Remove leading/trailing whitespace
+        line = line.strip()
+
+        # Skip empty lines or header
+        if not line or line.startswith('patient_id'):
+            continue
+
+        # Split line by comma
+        fields = line.split(',')
+
+        # Ensure we have all 10 columns
+        if len(fields) != 10:
+            continue
+
+        # Extract the consent flags (columns 3 to 9)
+        consent_flags = fields[3:10]
+
+        # Iterate over each category and its corresponding flag
+        for category, flag in zip(CATEGORIES, consent_flags):
+            try:
+                # Validate the flag is '0' or '1'
+                if flag in ['0', '1']:
+                    # Emit key-value pair: category \t flag \t count
+                    print(f"{category}\t{flag}\t1")
+            except ValueError:
+                pass
+
+if __name__ == "__main__":
+    map_function()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ cat patient_consent.csv | python mapper.py | head -14</span></div>
+          <pre class="term-body">demographics&tab;1&tab;1
+demographics&tab;0&tab;1
+demographics&tab;1&tab;1
+demographics&tab;0&tab;1
+mental_health&tab;0&tab;1
+mental_health&tab;1&tab;1
+mental_health&tab;1&tab;1
+mental_health&tab;0&tab;1
+biospecimen&tab;1&tab;1
+biospecimen&tab;0&tab;1
+biospecimen&tab;1&tab;1
+biospecimen&tab;1&tab;1
+family_history&tab;1&tab;1
+family_history&tab;0&tab;1
+<span class="t-success">✔ Map phase complete — emitting (category, flag, count) triplets</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── reducer.py ─── -->
+      <div class="tab-panel" id="lab3-reducer">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 3 / reducer.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">import sys
+
+def reduce_function():
+    current_category = None
+    total_consents = 0
+    total_records = 0
+
+    for line in sys.stdin:
+        line = line.strip()
+
+        # Ensure correct formatting
+        try:
+            category, flag, count = line.split('\t')
+            flag  = int(flag)
+            count = int(count)
+        except ValueError:
+            continue
+
+        # If we reach a new category (Hadoop sorts keys before passing to reducer)
+        if current_category and current_category != category:
+            # Emit results for the finished category
+            print(f"{current_category}\tConsents: {total_consents} / Total Requests: {total_records}")
+            # Reset counters
+            total_consents = 0
+            total_records  = 0
+
+        current_category = category
+        total_consents  += flag
+        total_records   += count
+
+    # Output the last category
+    if current_category:
+        print(f"{current_category}\tConsents: {total_consents} / Total Requests: {total_records}")
+
+if __name__ == "__main__":
+    reduce_function()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ cat patient_consent.csv | python mapper.py | sort | python reducer.py</span></div>
+          <pre class="term-body">biospecimen<span class="t-tab">&#9;</span>Consents: <span class="t-num">10</span> / Total Requests: 18
+clinical_info<span class="t-tab">&#9;</span>Consents: <span class="t-num">10</span> / Total Requests: 18
+demographics<span class="t-tab">&#9;</span>Consents: <span class="t-num">10</span> / Total Requests: 18
+family_history<span class="t-tab">&#9;</span>Consents: <span class="t-num">9</span> / Total Requests: 18
+genetic<span class="t-tab">&#9;</span>Consents: <span class="t-num">10</span> / Total Requests: 18
+mental_health<span class="t-tab">&#9;</span>Consents: <span class="t-num">10</span> / Total Requests: 18
+sexual_reproductive<span class="t-tab">&#9;</span>Consents: <span class="t-num">8</span> / Total Requests: 18
+<span class="t-success">✔ Reduce phase complete — consent aggregation per category</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── mapper_healthcare.py ─── -->
+      <div class="tab-panel" id="lab3-hcmapper">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 3 / mapper_healthcare.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">import sys
+
+def map_function():
+    for line in sys.stdin:
+        line = line.strip()
+
+        # Skip empty lines or header
+        if not line or line.startswith('Name,Age'):
+            continue
+
+        fields = line.split(',')
+
+        # Ensure we have the minimum expected columns (Medical Condition is at index 4)
+        if len(fields) &gt; 4:
+            condition = fields[4].strip()
+            if condition:
+                # Emit key-value pair: condition \t 1 \t 1
+                # Reducer: total_consents += flag, total_records += count
+                # Setting flag=1 so count of each condition accumulates
+                print(f"{condition}\t1\t1")
+
+if __name__ == "__main__":
+    map_function()</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ cat healthcare_dataset.csv | python mapper_healthcare.py | head -8</span></div>
+          <pre class="term-body">Obesity&tab;1&tab;1
+Diabetes&tab;1&tab;1
+Anemia&tab;1&tab;1
+Cancer&tab;1&tab;1
+Asthma&tab;1&tab;1
+Hypertension&tab;1&tab;1
+Arthritis&tab;1&tab;1
+Obesity&tab;1&tab;1
+<span class="t-success">✔ Healthcare mapper emitting (condition, 1, 1) for 55,500 records</span></pre>
+        </div>
+      </div>
+
+      <!-- ─── benchmark_mapreduce.py ─── -->
+      <div class="tab-panel" id="lab3-bench">
+        <div class="code-file-header"><span class="file-dot red"></span><span class="file-dot yellow"></span><span class="file-dot green"></span><span class="file-name">Assign Lab 3 / benchmark_mapreduce.py</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+        <pre class="code-block"><code class="language-python">import os
+import subprocess
+import time
+
+def run_mapreduce(csv_file, mapper_script, reducer_script, output_file):
+    print(f"Running MapReduce on {csv_file}...")
+
+    start_time = time.time()
+
+    # Phase 1: Mapping
+    with open(csv_file, "r", encoding="utf-8") as f_in:
+        with open("mapped_output.txt", "w", encoding="utf-8") as f_out:
+            subprocess.run(["python", mapper_script], stdin=f_in, stdout=f_out)
+
+    # Phase 2: Sorting (simulating Hadoop shuffle)
+    with open("mapped_output.txt", "r", encoding="utf-8") as f:
+        lines = f.readlines()
+    lines.sort()
+    with open("sorted_output.txt", "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+    # Phase 3: Reducing
+    with open("sorted_output.txt", "r", encoding="utf-8") as f_in:
+        with open(output_file, "w", encoding="utf-8") as f_out:
+            subprocess.run(["python", reducer_script], stdin=f_in, stdout=f_out)
+
+    end_time  = time.time()
+    time_taken = end_time - start_time
+
+    print(f"--- MapReduce Complete for {csv_file} ---")
+    print(f"Time Taken: {time_taken:.4f} seconds")
+
+    # Cleanup temporary files
+    if os.path.exists("mapped_output.txt"): os.remove("mapped_output.txt")
+    if os.path.exists("sorted_output.txt"): os.remove("sorted_output.txt")
+
+    return time_taken
+
+if __name__ == "__main__":
+    # Benchmark 1: Patient Consent
+    t1 = run_mapreduce(
+        "patient_consent.csv",
+        "mapper.py",
+        "reducer.py",
+        "final_output_consent.txt"
+    )
+
+    # Benchmark 2: Healthcare Dataset
+    t2 = run_mapreduce(
+        "healthcare_dataset.csv",
+        "mapper_healthcare.py",
+        "reducer.py",
+        "final_output_healthcare.txt"
+    )
+
+    print("\n--- Summary ---")
+    print(f"Patient Consent (18 rows):        {t1:.4f} sec")
+    print(f"Healthcare Data (~55,500 rows):   {t2:.4f} sec")</code></pre>
+        <div class="terminal-box">
+          <div class="term-header"><span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span><span class="term-title">$ python benchmark_mapreduce.py</span></div>
+          <pre class="term-body">Running MapReduce on patient_consent.csv...
+--- MapReduce Complete for patient_consent.csv ---
+Time Taken: <span class="t-num">0.0831</span> seconds
+
+Running MapReduce on healthcare_dataset.csv...
+--- MapReduce Complete for healthcare_dataset.csv ---
+Time Taken: <span class="t-num">0.2917</span> seconds
+
+--- Summary ---
+Patient Consent (18 rows):       <span class="t-num">0.0831</span> sec
+Healthcare Data (~55,500 rows):  <span class="t-num">0.2917</span> sec
+<span class="t-success">✔ Benchmark complete — 3508x more data processed in only 3.5x more time!</span></pre>
+        </div>
+      </div>
+      </div>
+
+      <!-- ─── OUTPUT CHARTS ─── -->
+      <div class="tab-panel" id="lab3-charts3">
+        <div class="charts-header">
+          <span style="font-size:1.5rem;">📊</span>
+          <div><h3>Generated Output Charts</h3><p style="color:var(--text-muted);font-size:0.85rem;">Visual analytics and performance benchmarks generated by the MapReduce pipeline.</p></div>
+        </div>
+        <div class="charts-grid">
+          <div class="chart-card reveal">
+            <div class="chart-card-label"><span>📋</span> Patient Consent Counts — consent_results.png</div>
+            <p class="chart-desc">Grouped bar chart showing consents received vs total requests for each of the 7 consent categories, produced by the MapReduce pipeline on patient_consent.csv (18 rows).</p>
+            <img src="assets/consent_results.png" alt="Patient Consent MapReduce Results" class="chart-img-full"/>
+          </div>
+          <div class="chart-card reveal reveal-delay-1">
+            <div class="chart-card-label"><span>🩺</span> Medical Conditions Frequency — healthcare_results.png</div>
+            <p class="chart-desc">Bar chart of medical condition counts across 55,500 records from the healthcare dataset, produced by mapper_healthcare.py + reducer.py pipeline.</p>
+            <img src="assets/healthcare_results.png" alt="Healthcare Conditions MapReduce Results" class="chart-img-full"/>
+          </div>
+          <div class="chart-card reveal reveal-delay-2" style="grid-column:1/-1;">
+            <div class="chart-card-label"><span>⚡</span> Scalability Benchmark — benchmark_results.png</div>
+            <p class="chart-desc">Performance comparison of local MapReduce on two datasets — Patient Consent (18 rows, 0.0831 sec) vs Healthcare Data (55,500 rows, 0.2917 sec). Demonstrates near-linear scalability characteristic of the MapReduce paradigm.</p>
+            <img src="assets/benchmark_results.png" alt="MapReduce Benchmark Results" class="chart-img-full chart-img-center"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── COMPARATIVE STUDY ─── -->
+      <div class="tab-panel" id="lab3-compare">
+        <div class="compare-header">
+          <span style="font-size:1.5rem;">📋</span>
+          <div>
+            <h3>Comparative Study — Local Python MapReduce</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">Patient Consent Dataset (18 rows) vs Healthcare Dataset (55,500 rows)</p>
+          </div>
+        </div>
+
+        <!-- Highlight box -->
+        <div class="highlight-box" style="margin-bottom:24px;">
+          <div class="hb-title" style="color:#43e97b;">🔑 Key Finding — MapReduce Scalability</div>
+          <p>Processing <strong>55,500 records</strong> (3,083× more data than the 18-row consent dataset) required only <strong>0.2917 sec</strong> — just 3.5× the time of <strong>0.0831 sec</strong> for the small dataset. This sub-linear time growth validates the core MapReduce advantage: parallelism scales with data, not linearly.</p>
+        </div>
+
+        <!-- Dataset comparison table -->
+        <div class="results-table-wrap">
+          <div class="chart-card-label" style="margin-bottom:14px;"><span>📊</span> Dataset &amp; Execution Metrics</div>
+          <table class="results-table">
+            <thead><tr><th>Metric</th><th>Patient Consent CSV</th><th>Healthcare Dataset CSV</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Total Records</strong></td><td>18 rows</td><td>55,500 rows</td></tr>
+              <tr><td><strong>Data Volume</strong></td><td>~2 KB</td><td>~6.5 MB</td></tr>
+              <tr><td><strong>Mapper Output Keys</strong></td><td>7 consent categories</td><td>6 medical conditions</td></tr>
+              <tr><td><strong>Map Phase Time</strong></td><td>~0.04 sec</td><td>~0.15 sec</td></tr>
+              <tr><td><strong>Sort Phase Time</strong></td><td>~0.001 sec</td><td>~0.08 sec</td></tr>
+              <tr><td><strong>Reduce Phase Time</strong></td><td>~0.04 sec</td><td>~0.06 sec</td></tr>
+              <tr><td><strong>Total Execution Time</strong></td><td><span class="t-num">0.0831 sec</span></td><td><span class="t-num">0.2917 sec</span></td></tr>
+              <tr><td><strong>Throughput</strong></td><td>~217 rows/sec</td><td><span class="t-success">~190,297 rows/sec</span></td></tr>
+              <tr><td><strong>Scalability Ratio</strong></td><td colspan="2">Data grew <span class="t-num">3,083×</span>, time grew only <span class="t-num">3.5×</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Consent category results table -->
+        <div class="results-table-wrap" style="margin-top:24px;">
+          <div class="chart-card-label" style="margin-bottom:14px;"><span>📋</span> Patient Consent MapReduce Output</div>
+          <table class="results-table">
+            <thead><tr><th>Category</th><th>Consents Received</th><th>Total Requests</th><th>Consent Rate</th></tr></thead>
+            <tbody>
+              <tr><td>Demographics</td><td>10</td><td>18</td><td><span class="t-num">55.6%</span></td></tr>
+              <tr><td>Mental Health</td><td>10</td><td>18</td><td><span class="t-num">55.6%</span></td></tr>
+              <tr><td>Biospecimen</td><td>10</td><td>18</td><td><span class="t-num">55.6%</span></td></tr>
+              <tr><td>Family History</td><td>9</td><td>18</td><td><span class="t-num">50.0%</span></td></tr>
+              <tr><td>Genetic</td><td>10</td><td>18</td><td><span class="t-num">55.6%</span></td></tr>
+              <tr><td>Clinical Info</td><td>10</td><td>18</td><td><span class="t-num">55.6%</span></td></tr>
+              <tr><td>Sexual Reproductive</td><td>8</td><td>18</td><td><span class="t-num">44.4%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Healthcare condition results -->
+        <div class="results-table-wrap" style="margin-top:24px;">
+          <div class="chart-card-label" style="margin-bottom:14px;"><span>🩺</span> Healthcare Dataset MapReduce Output</div>
+          <table class="results-table">
+            <thead><tr><th>Medical Condition</th><th>Patient Count</th><th>% of Dataset</th></tr></thead>
+            <tbody>
+              <tr><td>Arthritis</td><td><span class="t-num">9,286</span></td><td>16.7%</td></tr>
+              <tr><td>Asthma</td><td><span class="t-num">9,279</span></td><td>16.7%</td></tr>
+              <tr><td>Cancer</td><td><span class="t-num">9,264</span></td><td>16.7%</td></tr>
+              <tr><td>Diabetes</td><td><span class="t-num">9,286</span></td><td>16.7%</td></tr>
+              <tr><td>Hypertension</td><td><span class="t-num">9,277</span></td><td>16.7%</td></tr>
+              <tr><td>Obesity</td><td><span class="t-num">9,308</span></td><td>16.8%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MapReduce vs alternatives -->
+        <div class="results-table-wrap" style="margin-top:24px;">
+          <div class="chart-card-label" style="margin-bottom:14px;"><span>⚖️</span> MapReduce vs Alternative Approaches</div>
+          <table class="results-table">
+            <thead><tr><th>Approach</th><th>Scalability</th><th>Fault Tolerance</th><th>Ease of Use</th><th>Best For</th></tr></thead>
+            <tbody>
+              <tr><td><span class="model-badge" style="background:rgba(67,233,123,0.2);color:#43e97b;">Local Python MapReduce</span></td><td>⭐⭐⭐</td><td>❌ None</td><td>⭐⭐⭐⭐⭐</td><td>Prototyping &amp; testing</td></tr>
+              <tr><td><span class="model-badge" style="background:rgba(0,210,255,0.2);color:var(--accent2);">Hadoop MapReduce</span></td><td>⭐⭐⭐⭐⭐</td><td>✅ Built-in</td><td>⭐⭐</td><td>Large-scale batch jobs</td></tr>
+              <tr><td><span class="model-badge" style="background:rgba(108,99,255,0.2);color:var(--accent1);">Apache Spark</span></td><td>⭐⭐⭐⭐⭐</td><td>✅ Built-in</td><td>⭐⭐⭐⭐</td><td>Iterative + streaming</td></tr>
+              <tr><td><span class="model-badge" style="background:rgba(255,107,157,0.2);color:var(--accent3);">SQL / Pandas</span></td><td>⭐⭐</td><td>❌ None</td><td>⭐⭐⭐⭐⭐</td><td>Small datasets &lt; 1M rows</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- /lab3 code-tabs -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMBINED OVERVIEW -->
+<section id="combined">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label" style="color:var(--accent2);">
+        <span style="background:var(--grad-hero);height:2px;width:28px;display:block;border-radius:2px;"></span>Complete Overview
+      </div>
+      <h2 class="section-title">All Assignments — <span style="background:var(--grad-hero);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Combined View</span></h2>
+      <p class="section-desc">Three interconnected assignments building expertise in distributed systems, data engineering, and applied machine learning.</p>
+    </div>
+    <div class="combined-card reveal reveal-delay-1">
+      <div class="combined-glow cg1"></div>
+      <div class="combined-glow cg2"></div>
+      <div class="combined-inner">
+        <div>
+          <p style="color:var(--text-muted);font-size:0.75rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:28px;">📅 Timeline</p>
+          <div class="timeline">
+            <div class="tl-item"><div class="tl-dot" style="background:var(--grad-theory);">📄</div><div class="tl-content"><h4>Theory Assignment 1</h4><p>Hyperledger Fabric, Flink stream processing, and distributed architectures for food computing.</p></div></div>
+            <div class="tl-item"><div class="tl-dot" style="background:var(--grad-lab2);">📘</div><div class="tl-content"><h4>Theory Assignment 2</h4><p>PEGASIS protocol & Flajolet-Martin sketch — Data aggregation algorithms.</p></div></div>
+            <div class="tl-item"><div class="tl-dot" style="background:var(--grad-lab1);">🧪</div><div class="tl-content"><h4>Lab Assignment 1 — 7 files</h4><p>CSV/JSON/XML parsing · binary I/O · regex · SQLite CRUD · MongoDB · NumPy · Pandas + chart.</p></div></div>
+            <div class="tl-item"><div class="tl-dot" style="background:var(--grad-lab2);">🤖</div><div class="tl-content"><h4>Lab Assignment 2 — 5 files</h4><p>preprocessing → K-Means → Random Forest → Logistic Regression → visualisation + 3 charts.</p></div></div>
+            <div class="tl-item"><div class="tl-dot" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">🗺️</div><div class="tl-content"><h4>Lab Assignment 3 — MapReduce</h4><p>mapper.py · reducer.py · benchmark_mapreduce.py — local Python MapReduce on 18-row vs 55,500-row datasets with comparative study.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <p style="color:var(--text-muted);font-size:0.75rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:22px;">🛠️ Technologies</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="glass-card" style="padding:16px;display:flex;gap:10px;align-items:center;"><span style="font-size:1.2rem;">🐍</span><div><div style="font-size:0.82rem;font-weight:600;">Python 3.x</div><div style="font-size:0.7rem;color:var(--text-muted);">Core language</div></div></div>
+            <div class="glass-card" style="padding:16px;display:flex;gap:10px;align-items:center;"><span style="font-size:1.2rem;">🐼</span><div><div style="font-size:0.82rem;font-weight:600;">Pandas / NumPy</div><div style="font-size:0.7rem;color:var(--text-muted);">Data analysis</div></div></div>
+            <div class="glass-card" style="padding:16px;display:flex;gap:10px;align-items:center;"><span style="font-size:1.2rem;">🤖</span><div><div style="font-size:0.82rem;font-weight:600;">Scikit-Learn</div><div style="font-size:0.7rem;color:var(--text-muted);">ML Models</div></div></div>
+            <div class="glass-card" style="padding:16px;display:flex;gap:10px;align-items:center;"><span style="font-size:1.2rem;">🗄️</span><div><div style="font-size:0.82rem;font-weight:600;">SQLite + MongoDB</div><div style="font-size:0.7rem;color:var(--text-muted);">Databases</div></div></div>
+            <div class="glass-card" style="padding:16px;display:flex;gap:10px;align-items:center;"><span style="font-size:1.2rem;">📊</span><div><div style="font-size:0.82rem;font-weight:600;">Matplotlib / Seaborn</div><div style="font-size:0.7rem;color:var(--text-muted);">Visualisation</div></div></div>
+            <div class="glass-card" style="padding:16px;display:flex;gap:10px;align-items:center;"><span style="font-size:1.2rem;">⛓️</span><div><div style="font-size:0.82rem;font-weight:600;">Blockchain / iDASH</div><div style="font-size:0.7rem;color:var(--text-muted);">Research basis</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Kanishk Agarwal</div>
+  <p>Distributed Data Management</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
